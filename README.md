@@ -72,28 +72,37 @@ To cp and mv commands are equivalent to the copy-paste and cut-paste in Windows.
 
   To zip and unzip the command
 
-  ``` zip <archive name> <file names separated by space> ```
+   ``` zip <archive name> <file names separated by space> ```
 
-  ``` unzip <archive name> ```
+   ``` unzip <archive name> ```
 
 
   ## To compare files
 
   The diff, comm, and cmp commands compare differences 
 
-  ``` diff <file 1> <file 2> ```
+   ``` diff <file 1> <file 2> ```
 
   - Say the actual text
   
-  ``` cmp <file 1> <file 2> ```
+   ``` cmp <file 1> <file 2> ```
 
   - tells the line number, not the actual text
     
-  ``` comm <file 1> <file2> ```
+   ``` comm <file 1> <file2> ```
 
  ## server
 
  To connect to an external machine on the network with the use of the SSH protocol
  
- ``` ssh username@hostname ```
- 
+  ``` ssh username@hostname ```
+
+
+ To use the external OS start and stop the service
+
+  ``` service ssh start ```
+  
+  ``` service ssh stop ```
+  
+  ``` service ssh start ```
+
