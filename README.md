@@ -4,9 +4,13 @@
 ``` sudo ```
 
 To provide a temporary grant to users or user groups privileged access to system resources.
-so that they can run commands that they cannot run under their regular accounts.
+so that they can run commands that they cannot run under their regular accounts. If below command show error on permission then add this prefix.
 
 ## process
+To see the running process
+
+ ``` ps ```
+
 To list any process listening to the port 8080:
 
 ``` lsof -i:8080 ```
@@ -18,6 +22,9 @@ To kill any process listen to port 8080:
 or more violently:
 
 ``` kill -9 $(lsof -t -i:8080) ```
+
+``` killall <process name> ``` to kill all the process
+
 
 ## Folders
 
@@ -100,9 +107,27 @@ To cp and mv commands are equivalent to the copy-paste and cut-paste in Windows.
 
  To use the external OS start and stop the service
 
-  ``` service ssh start ```
+   ``` service ssh start ```
   
-  ``` service ssh stop ```
-  
-  ``` service ssh start ```
+   ``` service ssh stop ```
+   
+   ``` service ssh start ```
+
+ ## File permission and File Ownership
+
+ The chmod gives us the functionality to change the file permissions
+ and chown gave us the file ownership
+
+ ## Networking
+
+To show a List of all network and system IP addresses and other Information.
+
+ ``` ifconfig ```
+
+ To trace out all information of IP Address, the hostname, or the domain name of the endpoint.
+ By which we can see all the routers that your data pass through to reach the destination.
+
+ ``` traceroute <destination address> ```
+
+ 
 
