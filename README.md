@@ -148,7 +148,7 @@ and Chown gave us the file ownership
 
 Type of mode
 
-1) symbolic mode
+**1) symbolic mode**
    
    using Operator
    
@@ -182,7 +182,8 @@ Type of mode
      Read and write for the Owner, and read-only for the group and others:
    
      ``` chmod u+rw,go+r [file_name] ```
-   2) Octal mode:
+   
+**2) Octal mode**
    
    In this method, we specify permission using a three-digit number.
 
