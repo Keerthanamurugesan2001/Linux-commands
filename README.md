@@ -73,45 +73,45 @@ For Compress
 
 ``` tar -cvf <archive name> <files seperated by space> ```
 
- For Extract
+For Extract
 
- ``` tar -xvf <archive name> ```
+``` tar -xvf <archive name> ```
 
- To zip and unzip the command
+To zip and unzip the command
 
-  ``` zip <archive name> <file names separated by space> ```
+``` zip <archive name> <file names separated by space> ```
 
-  ``` unzip <archive name> ```
+``` unzip <archive name> ```
 
 
- ## To compare files
+## To compare files
 
- The diff, comm, and cmp commands compare differences 
+The diff, comm, and cmp commands compare differences 
 
-  ``` diff <file 1> <file 2> ```
+``` diff <file 1> <file 2> ```
 
- - Say the actual text
- 
-  ``` cmp <file 1> <file 2> ```
+- Say the actual text
 
- - tells the line number, not the actual text
-   
-  ``` comm <file 1> <file2> ```
+``` cmp <file 1> <file 2> ```
+
+- tells the line number, not the actual text
+
+``` comm <file 1> <file2> ```
 
 ## server
 
 To connect to an external machine on the network with the use of the SSH protocol
 
- ``` ssh username@hostname ```
+``` ssh username@hostname ```
 
 
 To use the external OS start and stop the service
 
-  ``` service ssh start ```
- 
-  ``` service ssh stop ```
-  
-  ``` service ssh start ```
+``` service ssh start ```
+
+``` service ssh stop ```
+
+``` service ssh start ```
 
 ## File permission and File Ownership
 
@@ -149,65 +149,65 @@ and Chown gave us the file ownership
 Type of mode
 
 **1) symbolic mode**
-   
-   using Operator
-   
-      `+`	Add permissions,
-      `-`	Remove permissions,
-      `=`	Set the permissions to the specified values
-   
-   Using Letter
-   
-      `r`	Read permission,
-       `w`	Write permission,
-       `x`	Execute permission
-   
-   Reference for user
-   
-      u	Owner,
-      g	Group,
-      o	Others,
-      a	All (owner, groups, others)
 
-   example:
-   
-    Read, write, and execute permissions to the file owner:
+using Operator
 
-     ``` chmod u+rwx [file_name] ```
-   
-     Remove write permission for the group and others:
-   
-     ``` chmod go-w [file_name] ```
-   
-     Read and write for the Owner, and read-only for the group and others:
-   
-     ``` chmod u+rw,go+r [file_name] ```
-   
+`+`	Add permissions,
+`-`	Remove permissions,
+`=`	Set the permissions to the specified values
+
+Using Letter
+
+`r`	Read permission,
+`w`	Write permission,
+`x`	Execute permission
+
+Reference for user
+
+u	Owner,
+g	Group,
+o	Others,
+a	All (owner, groups, others)
+
+example:
+
+Read, write, and execute permissions to the file owner:
+
+``` chmod u+rwx [file_name] ```
+
+Remove write permission for the group and others:
+
+``` chmod go-w [file_name] ```
+
+Read and write for the Owner, and read-only for the group and others:
+
+``` chmod u+rw,go+r [file_name] ```
+
 **2) Octal mode**
-   
-   In this method, we specify permission using a three-digit number.
 
-     The first digit specify the permission for Owner.
-   
-     Second digit specify the permission for Group.
-   
-     Third digit specify the permission for Others. The digits
+In this method, we specify permission using a three-digit number.
+
+The first digit specify the permission for Owner.
+
+Second digit specify the permission for Group.
+
+Third digit specify the permission for Others. The digits
 
 
-   4	Read Permission,
-   2	Write Permission,
-   1	Execute Permission
+4	Read Permission,
+2	Write Permission,
+1	Execute Permission
 
-   Calculate make permission
+Calculate make permission
 
-   example:
-   
-   ``` chmod 674 [file_name] ```
+example:
 
-   6 represents permission of the file Owner which is (rw).(4+2),
-   7 represents permission of Group which is (rwx). (4+2+1),
-   4 represents permission of Other which is (r). (4)
-   
+``` chmod 674 [file_name] ```
+
+6 represents permission of the file Owner which is (rw).(4+2),
+7 represents permission of Group which is (rwx). (4+2+1),
+4 represents permission of Other which is (r). (4)
+
 ## Networking
 
 To show a List of all network and system IP addresses and other Information.
