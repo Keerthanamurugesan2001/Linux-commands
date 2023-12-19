@@ -256,8 +256,54 @@ By which we can see all the routers that your data pass through to reach the des
 
 ``` traceroute <destination address> ```
 
+## Downloads
+
+### Wget
+
+Wget is a free utility for downloading files from web. It is a command-line tool that can be used to download files over HTTP, HTTPS, and FTP protocols
+
+##### syntax:
+```wget [options] [URL]```
+
+##### example:
+
+To download skype
+
+``` wget https://repo.skype.com/latest/skypeforlinux-64.deb ```
+
+After installing it
+
+```sudo apt install ./skypeforlinux-64.deb```
+
+## package management.
+
+### snap
+
+- a snap is a containerized application that includes all of its dependencies
+-  Snaps are a software deployment and package management system that can be installed on various Linux distributions. 
+
+why:
+- Install software: Snap is a universal package manager that allows users to install software that might not otherwise be available.
+- Automatic updates: Snaps update automatically and roll back gracefully.
+
+To create snap
+
+```
+sudo apt update
+sudo apt install snapd
+```
+
+example to install skype through snap:
+```
+sudo snap install skype --classic
+```
+
+or can install to snap store
 
 
+
+### Deb
+- A deb is a collection of files managed by the Debian packages management system
 # Ref link:
 
 https://www.digitalocean.com/community/tutorials/linux-commands
