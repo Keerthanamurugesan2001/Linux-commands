@@ -208,6 +208,43 @@ example:
 7 represents permission of Group which is (rwx). (4+2+1),
 4 represents permission of Other which is (r). (4)
 
+#### CHOWN File Ownership
+
+``` chown [options] new_owner[:new_group] file(s)```
+
+- `chown`: The base command.
+- `options`: Optional flags that modify the behavior of the `chown` command.
+- `new_owner[:new_group]`: The new owner and optionally the new group. If `new_group` is omitted, only the owner is changed.
+- `file(s)`: The file or files for which ownership is to be changed.
+
+**Options available in `chown`**
+
+```-c ```
+
+- utilized to report when a file change is made. 
+- when you want to receive notifications about ownership alterations.
+
+ex:
+
+``` chown -c master file1.txt ```
+
+This command notifies you when the ownership of `file1.txt` is changed, providing valuable feedback for tracking modifications.
+
+
+```-v```
+- showing detailed information for every processed file
+
+ex:
+chown -v master file1.txt
+By using this command, displaying information about each file processed during the ownership change.
+
+``` -f ```
+
+- suppress most error messages and forcefully or silently change ownership, even when not permitted.
+
+ex:
+``` chown -f master file1.txt ```
+
 ## Networking
 
 To show a List of all network and system IP addresses and other Information.
@@ -220,8 +257,11 @@ By which we can see all the routers that your data pass through to reach the des
 ``` traceroute <destination address> ```
 
 
+
 # Ref link:
 
 https://www.digitalocean.com/community/tutorials/linux-commands
 
 https://www.geeksforgeeks.org/chmod-command-linux/
+
+https://www.geeksforgeeks.org/chown-command-in-linux-with-examples/
